@@ -1,0 +1,19 @@
+version: "3"
+services:
+  main:
+     build: ./
+     ports:
+     - "8080:80"
+     volumes:
+     - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+     - "./app/:/opt/app/"
+  web1:
+     build: 
+       context: ./web1
+     ports:
+     - "8081:80"
+  web2:
+     build: 
+       context: ./web2
+     ports:
+     - "8082:80"
