@@ -9,3 +9,4 @@ RUN mkdir -p /var/ngx_pagespeed_cache
 COPY nginx.conf /etc/nginx/
 ADD index.html /usr/share/nginx/html/index.html
 ADD index.css /usr/share/nginx/html/index.css
+COPY css/ /usr/share/nginx/html/css/

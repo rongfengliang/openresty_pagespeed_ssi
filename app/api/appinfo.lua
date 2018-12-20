@@ -1,7 +1,7 @@
 local json =  require("cjson");
 function init()
     local user ={
-        name="rongfengliang dalong",
+        name="rongfengliang dalong -------",
         age=444
     }
     ngx.header.content_type = "application/javascript; charset=utf-8"
