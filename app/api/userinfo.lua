@@ -1,7 +1,7 @@
 local json =  require("cjson");
 function init()
     local user ={
-        name="dalong",
+        name="rongfeng",
         age=444
     }
     local jsoninfo =json.encode(user)
