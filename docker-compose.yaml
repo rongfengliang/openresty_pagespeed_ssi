@@ -13,6 +13,8 @@ services:
        context: ./web1
      ports:
      - "8081:80"
+     volumes:
+     - "./app/:/opt/app/"
   web2:
      build: 
        context: ./web2
