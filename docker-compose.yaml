@@ -20,3 +20,5 @@ services:
        context: ./web2
      ports:
      - "8082:80"
+     volumes:
+     - "./app/:/opt/app/"
